@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -23,12 +24,17 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 md:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <div className="flex items-center gap-2">
+          <a 
+            href="https://webhostingchicago.duoservers.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 cursor-pointer"
+          >
             <div className="w-8 h-8 rounded-md bg-primary flex items-center justify-center">
               <span className="text-white font-bold text-sm">CV</span>
             </div>
             <span className="font-display font-semibold text-lg">ChicagoVPS</span>
-          </div>
+          </a>
           
           <button 
             className="md:hidden"
@@ -44,12 +50,12 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white shadow-md animate-fade-in">
           <div className="px-6 py-4 space-y-3">
-            <a href="#features" className="block py-2 text-sm font-medium">Features</a>
-            <a href="#pricing" className="block py-2 text-sm font-medium">Pricing</a>
-            <a href="#testimonials" className="block py-2 text-sm font-medium">Testimonials</a>
-            <a href="#faq" className="block py-2 text-sm font-medium">FAQ</a>
-            <a href="#contact" className="block py-2 text-sm font-medium">Contact</a>
-            <Button className="w-full mt-2 shadow-subtle">Get Started</Button>
+            <Button 
+              className="w-full mt-2 shadow-subtle"
+              onClick={() => window.open('https://webhostingchicago.duoservers.com/', '_blank')}
+            >
+              Get Started
+            </Button>
           </div>
         </div>
       )}

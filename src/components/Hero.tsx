@@ -34,11 +34,11 @@ const Hero = () => {
           </p>
           
           <div className={`flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
-            <Button size="lg" className="shadow-subtle w-full sm:w-auto">
+            <Button size="lg" className="shadow-subtle w-full sm:w-auto" onClick={() => window.open('https://webhostingchicago.duoservers.com/', '_blank')}>
               Deploy Your VPS
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button variant="outline" size="lg" className="w-full sm:w-auto">
+            <Button variant="outline" size="lg" className="w-full sm:w-auto" onClick={() => window.open('https://webhostingchicago.duoservers.com/', '_blank')}>
               View Plans
             </Button>
           </div>
