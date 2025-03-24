@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -29,18 +28,6 @@ const Navbar = () => {
               <span className="text-white font-bold text-sm">CV</span>
             </div>
             <span className="font-display font-semibold text-lg">ChicagoVPS</span>
-          </div>
-          
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="nav-link text-sm font-medium">Features</a>
-            <a href="#pricing" className="nav-link text-sm font-medium">Pricing</a>
-            <a href="#testimonials" className="nav-link text-sm font-medium">Testimonials</a>
-            <a href="#faq" className="nav-link text-sm font-medium">FAQ</a>
-          </nav>
-          
-          <div className="hidden md:flex items-center space-x-4">
-            <a href="#contact" className="text-sm font-medium">Contact</a>
-            <Button size="sm" className="shadow-subtle">Get Started</Button>
           </div>
           
           <button 

@@ -2,7 +2,6 @@
 import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import Footer from '@/components/Footer';
 
 const Index = () => {
   // Smooth scroll to sections when clicking on navigation links
@@ -34,7 +33,6 @@ const Index = () => {
       <main>
         <Hero />
       </main>
-      <Footer />
     </div>
   );
 };
